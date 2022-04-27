@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+  <body>
+    <main>
+      <div class="header">
+        <div class="header-img">
+          <img src="images/foodie-1.png" alt="foodie-logo" style="width:370px;height:250px;"></img>
+        </div>
+          <p>CITIES AND RESTAURANTS I'VE EXPLORED WHILE TRAVELING THE WORLD</p>
+        <div class="travel-imgs">
+          <img src="images/nyc1.png" alt="nyc-pic" style="width:150px;height:150px;"></img>
+          <img src="images/madrid.png" alt="madrid-pic" style="width:150px;height:150px;"></img>
+          <img src="images/rincon.png" alt="rincon-pic" style="width:150px;height:150px;"></img>
+          <img src="images/paris.png" alt="paris-pic" style="width:150px;height:150px;"></img>
+        </div>
+      </div>
+
+      <!-- <div class="filter-button">
+        <select id="cityDropdown">
+          <option value="1">New York City</option>
+            <option value="2">Madrid</option>
+            <option value="3">Rincón</option>
+            <option value="4">Paris</option>
+        </select>
+      </div> -->
+
+    <div class="city-cards">
+      <article id="city-container">
+          <section class="city-list" id="city-list"> 
+          </section>
+      </article>
+    </div>
+
+      <br>
+      <form id="restaurant-form" class="restaurant-form">
+        <h3 style="font-family: Copperplate Gothic Light; 
+        font-size: 20px;">Add New Restaurant</h3>
+
+        <input type="text" name="name" id="restaurant-name" placeholder="Name" required></input>
+        <input type="text" name="nationality" id="restaurant-nationality" placeholder="Nationality" required></input>
+        <br><br>
+        <input type="integer" name="rating" id="restaurant-rating" min="1" max="10" placeholder="Rating 1-10" required></input>
+        
+
+          <select class="select-city-restaurant" id="cityRestaurant">
+          </select>
+        
+        <br><br>
+        <button class="form-button" type="submit" value="Create">Submit</button>
+      </form>
+      <br>
+      <br>
+
+
+    </main>
+    <script src="services/CityApi.js" type="text/javascript"></script>
+    <script src="models/city.js" type="text/javascript"></script>
+    <script src="services/RestaurantApi.js" type="text/javascript"></script>
+    <script src="models/restaurant.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+
+</html>
